@@ -1,0 +1,10 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=210
+
+If you want to update this file, please download rainbow.zip.
+http://www.vim.org/script.php?script_id=463
+
+If you edit this like
+:%s/#\(\x\x\)\(\x\x\)\(\x\x\)/#\3\2\1/g | %s/blue/red/ | w fine_red.vim
+you can get fine_red.vim!
+
+NOTE:This colorscheme is GUI only.
