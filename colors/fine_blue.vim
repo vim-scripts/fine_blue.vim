@@ -1,9 +1,9 @@
 " Vim color file
 "  Maintainer: Tiza
-" Last Change: 2002/02/10 Sun 23:32.
-" GUI only
-
+" Last Change: 2002/03/08 Fri 21:38.
+"     version: 1.2
 " This color scheme uses a light background.
+" GUI only
 
 set background=light
 hi clear
@@ -15,61 +15,65 @@ let colors_name = "fine_blue"
 
 hi Normal       guifg=#303040 guibg=#f8f8f8
 
-hi IncSearch    gui=UNDERLINE guifg=#000000 guibg=#40ffff
+" Search 
+hi IncSearch    gui=UNDERLINE guifg=#303040 guibg=#40ffff
 hi Search       gui=NONE guifg=#303040 guibg=#ffffa0
 
-hi ErrorMsg     gui=BOLD guifg=#ffffff guibg=#ff4080
-hi WarningMsg   gui=BOLD guifg=#ffffff guibg=#ff4080
+" Messages 
+hi ErrorMsg     gui=NONE guifg=#ff0070 guibg=#ffe0f4
+hi WarningMsg   gui=NONE guifg=#ff0070 guibg=#ffe0f4
 hi ModeMsg      gui=NONE guifg=#0070ff guibg=NONE
 hi MoreMsg      gui=NONE guifg=#a800ff guibg=NONE
 hi Question     gui=NONE guifg=#008050 guibg=NONE
 
+" Split area 
 hi StatusLine   gui=BOLD guifg=#f8f8f8 guibg=#303040
 hi StatusLineNC gui=BOLD guifg=#a0a0b0 guibg=#303040
 hi VertSplit    gui=NONE guifg=#f8f8f8 guibg=#303040
+hi WildMenu     gui=BOLD guifg=#f8f8f8 guibg=#00aacc
 
-hi Visual       gui=NONE guifg=#404060 guibg=#dddde8
+" Diff 
+hi DiffText     gui=NONE guifg=#f83010 guibg=#ffeae0
+hi DiffChange   gui=NONE guifg=#006800 guibg=#d0ffd0
+hi DiffDelete   gui=NONE guifg=#2020ff guibg=#c8f2ea
+hi DiffAdd      gui=NONE guifg=#2020ff guibg=#c8f2ea
 
-hi DiffText     gui=NONE guifg=#7800ff guibg=#e0d8ff
-hi DiffChange   gui=NONE guifg=#ff0080 guibg=#ffe0f0
-hi DiffDelete   gui=BOLD guifg=#0000ff guibg=#ccccff
-hi DiffAdd      gui=NONE guifg=#000060 guibg=#d8d8ff
-
+" Cursor 
 hi Cursor       gui=NONE guifg=#0000ff guibg=#00e0ff
 hi lCursor      gui=NONE guifg=#f8f8f8 guibg=#8000ff
 hi CursorIM     gui=NONE guifg=#f8f8f8 guibg=#8000ff
 
+" Fold 
 hi Folded       gui=NONE guifg=#7800ff guibg=#e0d8ff
 hi FoldColumn   gui=NONE guifg=#aa60ff guibg=#f0f0f4
 
+" Other 
 hi Directory    gui=NONE guifg=#0000ff guibg=NONE
 hi LineNr       gui=NONE guifg=#8080a0 guibg=NONE
 hi NonText      gui=BOLD guifg=#4000ff guibg=#ececf0
-hi SpecialKey   gui=NONE guifg=#009060 guibg=NONE
-hi WildMenu     gui=BOLD guifg=#f8f8f8 guibg=#00aacc
-
-" Groups for syntax highlighting
-hi Comment      gui=NONE guifg=#ff00c0 guibg=NONE
+hi SpecialKey   gui=NONE guifg=#c87000 guibg=NONE
 hi Title        gui=NONE guifg=#004060 guibg=#c8f0f8
+hi Visual       gui=NONE guifg=#404060 guibg=#dddde8
+
+" Syntax group 
+hi Comment      gui=NONE guifg=#ff00c0 guibg=NONE
 hi Constant     gui=NONE guifg=#2020ff guibg=#e8e8ff
-hi Special      gui=NONE guifg=#005252 guibg=#c6f6e6
-hi Identifier   gui=NONE guifg=#c800ff guibg=NONE
-hi Statement    gui=NONE guifg=#008050 guibg=NONE
-hi PreProc      gui=NONE guifg=#0070e6 guibg=NONE
-hi Type         gui=NONE guifg=#7040ff guibg=NONE
-hi Todo         gui=NONE guifg=#ff0070 guibg=#ffe0f4
-hi Ignore       gui=NONE guifg=#f8f8f8 guibg=NONE
 hi Error        gui=BOLD guifg=#ffffff guibg=#ff4080
+hi Identifier   gui=NONE guifg=#c800ff guibg=NONE
+hi Ignore       gui=NONE guifg=#f8f8f8 guibg=NONE
+hi PreProc      gui=NONE guifg=#0070e6 guibg=NONE
+hi Special      gui=NONE guifg=#005858 guibg=#ccf7ee
+hi Statement    gui=NONE guifg=#008858 guibg=NONE
+hi Todo         gui=NONE guifg=#ff0070 guibg=#ffe0f4
+hi Type         gui=NONE guifg=#7040ff guibg=NONE
+hi Underlined   gui=UNDERLINE guifg=#0000ff guibg=NONE
 
-" HTML
-hi htmlLink                 gui=UNDERLINE
-hi htmlBoldUnderline        gui=BOLD
-hi htmlBoldItalic           gui=BOLD
+" HTML 
+hi htmlLink                 gui=UNDERLINE guifg=#0000ff guibg=NONE
 hi htmlBold                 gui=BOLD
-hi htmlBoldUnderlineItalic  gui=BOLD
-hi htmlUnderlineItalic      gui=UNDERLINE
+hi htmlBoldItalic           gui=BOLD,ITALIC
+hi htmlBoldUnderline        gui=BOLD,UNDERLINE
+hi htmlBoldUnderlineItalic  gui=BOLD,UNDERLINE,ITALIC
+hi htmlItalic               gui=ITALIC
 hi htmlUnderline            gui=UNDERLINE
-hi htmlItalic               gui=italic
-
-" Help
-hi helpExample gui=NONE guifg=#0040ff guibg=NONE
+hi htmlUnderlineItalic      gui=UNDERLINE,ITALIC
